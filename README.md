@@ -1,18 +1,22 @@
-# RateX - Go Rate Limiter
+# RateX
 
-RateX is a flexible rate limiting package for Go applications with built-in Gin middleware support. It provides multiple algorithms and storage backends for distributed rate limiting.
+A rate limiter for Go apps with Gin support.
 
-## Features
+## What's inside
 
-- **Multiple Algorithms**: Token Bucket and Sliding Window
-- **Distributed**: Redis support for horizontal scaling
-- **Flexible Keys**: By IP, API key, user ID, or custom logic
-- **Standard Headers**: X-RateLimit headers
-- **Production Ready**: Thread-safe, error handling, and testing
-- **Easy Integration**: Simple middleware for Gin
-- **Configurable**: Per-route or global limits
+- Token bucket algorithm
+- Redis support (if you need multiple servers)
+- Rate limit by IP, API key, or whatever you want
+- Standard rate limit headers
 
-## Installation
+## Install
 
 ```bash
 go get github.com/afriwondimu/RateX
+```
+Install
+```bash
+go get github.com/gin-gonic/gin
+go get github.com/redis/go-redis/v9
+go get golang.org/x/time/rate
+```
