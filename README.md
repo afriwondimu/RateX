@@ -20,3 +20,11 @@ go get github.com/gin-gonic/gin
 go get github.com/redis/go-redis/v9
 go get golang.org/x/time/rate
 ```
+## Test
+```bash
+make run
+```
+Try 5 request within 10s
+```
+http://localhost:8080/api/ping
+```
